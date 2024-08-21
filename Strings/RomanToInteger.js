@@ -20,12 +20,10 @@ var romanToInt = function(s) {
         if(curr < nextVal){
             results += nextVal - curr
             i++  
-           
         }
         else{
             results += curr
         }
     }
     return results
-
 };
