@@ -1,4 +1,4 @@
-function isPalindrome(string){
+function isPalindromes(string){
     //PREP
     // non empty  string check
     // boolean to check if string is palindrome 
@@ -15,7 +15,7 @@ function isPalindrome(string){
     }
     return  Is_pal;
 }
-console.log(isPalindrome('abcdcba'))
+console.log(isPalindromes('abcdcba'))
 
 
 //best solution of Time complexity of o(n) and space complexity of o(1)
