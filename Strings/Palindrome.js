@@ -3,17 +3,17 @@ function isPalindrome(string){
     // non empty  string check
     // boolean to check if string is palindrome 
     // single string are Palindrome. 
-    let is_pal = true;
+    let Is_pal = true;
     let str = string.toLowerCase();
     let stringReverse = str.split("").reverse().join("");
     //LOGIC
     if(str === stringReverse){
-       return is_pal;
+       return Is_pal;
     }
     else{
-        is_pal = false
+        Is_pal = false
     }
-    return  is_pal;
+    return  Is_pal;
 }
 console.log(isPalindrome('abcdcba'))
 
