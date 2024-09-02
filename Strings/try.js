@@ -10,7 +10,7 @@
 //   }
 // console.log(isPalindrome("abcdmba"))
 
-function isPalindrom(string) {
+function isPalindroms(string) {
     // Write your code here.
     let StartIndex = 0
     let LastIndex = string.length-1
@@ -23,4 +23,4 @@ function isPalindrom(string) {
     }
     return true
   }
-console.log(isPalindrom("abcdcba"))
+console.log(isPalindroms("abcdcba"))
