@@ -13,13 +13,13 @@
 function isPalindrom(string) {
     // Write your code here.
     let StartIndex = 0
-    let lastIndex = string.length-1
-    while(StartIndex <lastIndex ) {
-        if(string[StartIndex] !== string[lastIndex]){
+    let LastIndex = string.length-1
+    while(StartIndex <LastIndex ) {
+        if(string[StartIndex] !== string[LastIndex]){
             return false
         }
         StartIndex++
-        lastIndex--
+        LastIndex--
     }
     return true
   }
