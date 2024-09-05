@@ -30,13 +30,13 @@ function validIPAddresses(string) {
     return validIPAddresses;
   }
   
-  function isValidParts(part){
-    if(part.length > 3 || part.length < 1){
+  function isValidParts(parts){
+    if(parts.length > 3 || parts.length < 1){
       return false;
     }
-    const num = Number(part);
+    const num = Number(parts);
     if(num > 256){
       return false;
     }
-    return part.length === num.toString().length;
+    return parts.length === num.toString().length;
   }
