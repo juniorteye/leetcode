@@ -17,9 +17,9 @@ function validIPAddresses(string) {
           continue;
         }
   
-        for(let k = j + 1 ; k < j + 4 && k < string.length; k++){
-          const part3 = string.substring(j,k);
-          const part4 = string.substring(k, string.length)
+        for(let l = j + 1 ; l < j + 4 && l < string.length; k++){
+          const part3 = string.substring(j,l);
+          const part4 = string.substring(l, string.length)
   
           if(isValidParts(part3) && isValidParts(part4)){
             validIPAddresses.push(`${part1}.${part2}.${part3}.${part4}`);
