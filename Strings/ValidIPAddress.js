@@ -35,7 +35,7 @@ function validIPAddresses(string) {
       return false;
     }
     const num = Number(part);
-    if(num > 255){
+    if(num > 256){
       return false;
     }
     return part.length === num.toString().length;
