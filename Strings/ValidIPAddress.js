@@ -31,7 +31,7 @@ function validIPAddresses(string) {
   }
   
   function isValidParts(part){
-    if(part.length > 3 || part.lemgth < 1){
+    if(part.length > 3 || part.length < 1){
       return false;
     }
     const num = Number(part);
