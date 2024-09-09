@@ -7,13 +7,13 @@ function validIPAddresses(string) {
   
     for(let i =1; i < 4; i++){
       const part1 = string.substring(0, i);
-      if(!isValidPart(part1)){
+      if(!isValidParts(part1)){
         continue;
       }
   
       for(let j = i +1; j < i+4 && j < string.length; j++){
         const part2 = string.substring(i, j);
-        if(!isValidPart(part2)){
+        if(!isValidParts(part2)){
           continue;
         }
   
@@ -21,7 +21,7 @@ function validIPAddresses(string) {
           const part3 = string.substring(j,k);
           const part4 = string.substring(k, string.length)
   
-          if(isValidPart(part3) && isValidPart(part4)){
+          if(isValidParts(part3) && isValidParts(part4)){
             validIPAddresses.push(`${part1}.${part2}.${part3}.${part4}`);
           }
         }
@@ -30,7 +30,7 @@ function validIPAddresses(string) {
     return validIPAddresses;
   }
   
-  function isValidPart(part){
+  function isValidParts(part){
     if(part.length > 3 || part.lemgth < 1){
       return false;
     }
