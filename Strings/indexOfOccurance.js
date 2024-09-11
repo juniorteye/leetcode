@@ -6,4 +6,3 @@
 var strStr = function(haystack, needle) {
     return haystack.indexOf(needle); // Returns the first occurrence index or -1 if not found
 }
-
